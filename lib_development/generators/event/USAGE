@@ -1,0 +1,14 @@
+Description:
+    Generates the boilerplate code to add a new event sourced event to the stream.
+    The first argument is the name of the event.
+    The second argument is the name of the module of that event.
+    If you don't specify the second argument then the event will be created under
+    the `Default` module.
+
+Example:
+    rails generate event SomethingHappened Proposals
+
+    This will:
+        create  app/domain/events/proposals/something_happened.rb
+        create  app/calculators/proposals/on_something_happened.rb
+        insert  config/initializers/rails_event_store.rb

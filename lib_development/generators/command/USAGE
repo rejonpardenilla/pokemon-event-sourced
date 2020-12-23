@@ -1,0 +1,13 @@
+Description:
+    Generates the boilerplate code to add a new CQRS command to the command bus.
+    The first argument is the name of the command.
+    The second argument is the name of the aggregate that the command calls to.
+    If you don't specify the second argument then the command will not call any aggregate.
+
+Example:
+    rails generate command DoStuff Proposal
+
+    This will:
+        create  app/domain/commands/do_stuff.rb
+        create  app/domain/command_handlers/on_do_stuff.rb
+        insert  config/initializers/rails_event_store.rb
