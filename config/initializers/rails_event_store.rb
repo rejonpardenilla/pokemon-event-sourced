@@ -9,5 +9,6 @@ Rails.configuration.to_prepare do
   end
 
   Rails.configuration.event_store.tap do |store|
+    store.subscribe Pokemons::OnWildPokemonAppeared, to: [Events::Pokemons::WildPokemonAppeared]
   end
 end

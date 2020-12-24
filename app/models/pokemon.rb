@@ -1,5 +1,5 @@
 class Pokemon < ApplicationRecord
-  enum :gender, {
+  enum gender: {
     female: 'female',
     male: 'male'
   }
