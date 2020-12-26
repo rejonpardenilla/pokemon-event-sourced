@@ -29,7 +29,7 @@ class PokemonAppearOnTheWildTest < ActiveSupport::TestCase
     assert_equal pokemon_data.fetch(:route), event.data.fetch(:route)
   end
 
-  test 'create phase action should raise an exception if a phase with the same name already exists' do
+  test 'appear_on_the_wild action should raise an exeption if pokemon already appeared' do
     # Given
     @pokemon_id = SecureRandom.uuid
     @stream_name = "Pokemon$#{@pokemon_id}"
