@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Why
+This is the code I've been generating when I was writting these medium posts:
+- [Event Sourcing explained with real code](https://medium.com/yellowme/event-sourcing-explained-with-real-code-5d621859bf51)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Run this project
+You can run this project as you would run a Rails 6 project with Postgresql.
+`bin/rails db:setup`
